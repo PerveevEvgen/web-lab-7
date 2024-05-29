@@ -1,0 +1,44 @@
+.sliderContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.sliderImage {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+}
+
+.sliderButton{
+    all:unset;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.sliderButton:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.sliderButton > * {
+    stroke: white;
+    fill: black;
+    width: 2rem;
+    height: 2rem;
+ }
+
+ .sliderButton__left {
+    left: 0;
+ }
+
+ .sliderButton__right {
+    right: 0;
+ } 
